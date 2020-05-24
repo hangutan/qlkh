@@ -1,0 +1,35 @@
+.from-dangki{
+    input{
+        width: 100%;
+        margin: 5px 0;
+        padding: 5px 10px;
+        border: 1px solid #000044;
+    }
+    .Form_err{
+        color: red;
+        margin-left: 10px;
+        font-size: 16px;
+        font-family: cursive;
+    }
+}
+.modal-fromdk{
+    .ant-modal-title{
+        color: black;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: COMIC SANS MS;
+    }
+    .ant-modal-close-x{
+        line-height: 46px;
+        color: black;
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .ant-modal-close-x:hover{
+        color: red;
+        font-size: 27px;
+        line-height: 44px;
+        transition: 0.3s;
+    }
+}

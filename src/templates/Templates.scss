@@ -1,0 +1,102 @@
+.wapper-admin{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    min-height: 100vh;
+    font-family: COMIC SANS MS;
+    .from-admin{
+        position: relative;
+        width: 450px;
+        min-height: 300px;
+        background-color: rgba(255,255,255,0.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,1);
+        .form{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+            padding: 40px;
+            p{
+                color: #eee;
+                a{
+                    color: #fff;
+                    letter-spacing: 0.4px;
+                }
+            }
+            h2{
+                margin: 0;
+                padding: 0;
+                color: #fff;
+                font-size: 22px;
+                text-transform:uppercase;
+            }
+            .inputBox{
+                width: 100%;
+                margin-top: 20px;
+                input{
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid #fff;
+                    outline: none;
+                    font-size: 18px;
+                    color: #fff;
+                    padding: 5px 0;
+                    font-family: COMIC SANS MS;
+                }
+                input::placeholder{
+                    color: #fff;
+                }
+            }
+            .inputBox input[type="button"]{
+                background-color: #fff;
+                color: #000;
+                font-weight: 900;
+                max-width: 100px;
+                cursor: pointer;
+            }
+            .inputBox-button{
+                text-align: center;
+                margin-left: -10px;
+            }
+        }
+    }
+    .from-admin::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+    }
+    .from-admin::after{
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(45deg,#ff0047,#6eff00);
+        pointer-events: none;
+        animation: animation1 15s linear infinite;
+    }
+    @keyframes animation1{
+        0%{
+            filter: blur(40px) hue-rotate(0deg);
+        }
+        50%{
+            filter: blur(100px) hue-rotate(180deg);
+        }
+        100%{
+            filter: blur(40px) hue-rotate(360deg);
+        }
+    }
+}
+
+

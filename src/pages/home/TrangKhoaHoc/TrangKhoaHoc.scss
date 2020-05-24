@@ -1,0 +1,365 @@
+.courses {   
+    .content_courses {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3.4rem;
+        .content1 {
+            position: relative;
+            margin-top: 20px;
+            .box{
+                float: left;
+                position: relative;
+                width: 400px;
+                margin: 30px 0;
+                height: 400px;
+                background: #001e2d;
+                box-sizing: border-box;
+                overflow: hidden;
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+                border: 2px solid rgba(0, 0, 0, 0.3);
+                z-index: 3;
+                .content{
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    bottom: 15px;
+                    right: 15px;
+                    border: 2px solid #ffeb3b;
+                    padding: 30px;
+                    text-align: justify;
+                    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+                    h1{
+                        color: #fff;
+                        font-size: 27px;
+                        margin: 0 0 10px;
+                    }
+                    p{
+                        color: #fff;
+                        line-height: 22px;
+                    }
+                }
+                span{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                span:nth-child(1){
+                    transform: rotate(0deg);
+                }
+                span:nth-child(2){
+                    transform: rotate(90deg);
+                }
+                span:nth-child(2)::before{
+                    animation-delay: -2s;
+                }
+                span:nth-child(3){
+                    transform: rotate(180deg);
+                }
+                span:nth-child(4){
+                    transform: rotate(270deg);
+                }
+                span:nth-child(4)::before{
+                    animation-delay: -2s;
+                }
+                span::before{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background: #0093ff;
+                    animation: animation1 4s linear infinite;
+                }
+                @keyframes animation1{
+                    0%{
+                        transform: scale(0);
+                        transform-origin: left;
+                    }
+                    50%{
+                        transform: scale(1);
+                        transform-origin: left;
+                    }
+                    50.1%{
+                        transform: scale(1);
+                        transform-origin: right;
+                    }
+                    100%{
+                        transform: scale(0);
+                        transform-origin: right;
+                    }
+                }
+            }
+            .box::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.1);
+                transition: 0.5s;
+                pointer-events: none;
+            }
+            .box:hover::before{
+                left: -50%;
+                transform: skewX(-5deg);
+            }
+            .content-box{
+                z-index: 2;
+                position: absolute;
+                right: 1.5%;
+                float: right;
+                width: 51rem;
+                height: 460px;
+                background-color: #333;
+                .bg_course{
+                    z-index: 1;
+                    opacity: 0.1;
+                    position: absolute;
+                    float: right;
+                    width: 51rem;
+                    height: 460px;
+                    border: 1px solid #222;
+                    img{
+                        z-index: 1;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                    }
+                }
+                h2{
+                    opacity: 1;
+                    z-index: 3;
+                    margin-left: 32%;
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: white;
+                    margin-top: 35px;
+                    font-family: COMIC SANS MS;
+                }
+                ul{
+                    z-index: 3;
+                    position: relative;
+                    width: 100%;
+                    margin-top: 6%;
+                    margin-left: 23%;
+                    width: 40rem;
+                    height: 300px;
+                    li{
+                        border: 1px solid #000044;
+                        position: absolute;
+                        list-style: none;
+                        width: 140px;
+                        height: 140px;
+                        margin: 0;
+                        background: #000;
+                        transform: rotate(45deg);
+                        transition: 0.5s;
+                        .bg{
+                            overflow: hidden;
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    li:hover{
+                        img{
+                            transform: scale(1.1);
+                            transition: 0.6s;
+                        }
+
+                    }
+                    .item1{
+                        top: 0;
+                        left: 0;
+                    }
+                    .item2{
+                        bottom: 19%;
+                        left: 16%;
+                    }
+                    .item3{
+                        top: 0;
+                        left: 32%;
+                    }
+                    .item4{
+                        bottom: 19%;
+                        left: 48%;
+                    }
+                    .item5{
+                        top: 0;
+                        left: 64%;
+                    }
+                    
+                }
+            }
+
+        }
+
+        .row {
+            padding: 10px !important;
+            margin : 0 !important;
+
+            .img {
+                width : 100%;
+                height: 300px;
+
+                img {
+                    width : 100%;
+                    height: 100%;
+                }
+            }
+
+            .content-bgImg {
+                .title {
+                    font-size     : 25px;
+                    color         : black;
+                    font-weight   : bold;
+                    letter-spacing: 0.8px;
+                }
+
+                .ct {
+                    padding-top: 4px;
+                    font-size  : 16px;
+                    color      : black;
+                }
+
+                .icon {
+                    font-size    : 18px;
+                    color        : black;
+                    padding-right: 5px;
+                }
+
+                .btn-courses {
+                    text-align: center;
+
+                    button {
+                        color           : black;
+                        font-weight     : bold;
+                        border          : none;
+                        padding         : 3px 30px;
+                        font-size       : 18px;
+                        border-radius   : 20px;
+                        background-image: linear-gradient(to right, red, yellow);
+                    }
+
+                    button:hover {
+                        transition      : 0.3s;
+                        color           : black;
+                        font-weight     : bold;
+                        border          : none;
+                        padding         : 3px 30px;
+                        font-size       : 18px;
+                        border-radius   : 20px;
+                        background-image: linear-gradient(to right, orange, rgba(122, 122, 12, 0.808));
+                    }
+                }
+            }
+        }
+
+        .content2 {
+            .tilte-course{
+                margin-top: 25px;
+                text-align: center;
+                h3{
+                  font-size: 28px;
+                  font-weight: 800;
+                  color: #363636;
+                }
+                .gach{
+                  height: 5px;
+                  width: 60px;
+                  background-color: black;
+                  margin: 0 auto;
+                  margin-bottom: 20px;
+                }
+                h4{
+                  font-size: 22px;
+                  font-weight: 700;
+                  color: #4F4F4F;
+                  margin-bottom: 20px;
+                }
+            }
+            .tab {
+                margin: 10px 25px;
+                .ant-tabs{
+                    border: 1px solid #333;
+                }
+                .ant-tabs-bar{
+                    margin: 0;       
+                }
+                .ant-tabs-nav-wrap{
+                    margin-bottom: 0;
+                }
+                .ant-tabs-nav{
+                    width: 100%;
+                    border-bottom: 1px solid #333;
+                    background-color: #999;
+                    .ant-tabs-tab{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #222;
+                        margin: 0 15px;
+                        text-align: center;
+                        width: 13%;
+                    }
+                    .ant-tabs-tab-active{
+                        color: black;
+                        font-weight: 700;
+                    }
+                    .ant-tabs-ink-bar-animated{
+                        width: 0!important;
+                    }
+                }
+            }
+        }
+        .card-tab {
+            width: 30%;
+            float : left;
+            height: 400px;
+            margin: 10px 2.5%;
+            box-shadow: 0 0 4px #888;
+            h3{
+                margin-top: 5px;
+                text-align: center;
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px;
+                color: black;
+                padding-left: 5px;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .luotXem{
+                margin-bottom: 1rem;
+            }
+            span{
+                font-weight: 500;
+                color: #444;
+                font-size: 16px;
+            }
+            .ant-card-cover {
+                width : 100%;
+                height: 200px;
+                img {
+                    border: 1px solid #eee;
+                    width : 96%;
+                    height: 100%;
+                    margin: 2%;
+                }
+            }
+            .ant-card-body {
+                padding: 5px 10px !important;
+
+                .add-cart {
+                    float: right;
+                }
+            }
+        }
+    }
+}
