@@ -83,7 +83,7 @@ function Header() {
                             <div className="giohang p-2">
                                 <div className="total">${countCart}0.0</div>
                             {
-                                listCart.map(o =>{
+                                listCart && listCart.map(o =>{
                                     return(
                                     <div key={o.maKhoaHoc} className="items">
                                         <div className="img">
